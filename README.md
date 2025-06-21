@@ -8,9 +8,12 @@ This is an interactive web-based video player inspired by Netflix’s *Bandersna
 
 ```
 project-folder/
-├── index.html  # Full player with 477 lines, configured for nebulaflix.stream
-├── bandersnatch.js                        # Main object script with interactive metadata
+├── license
+├── readme.md
 ├── SegmentMap.js                          # Segment timing and structure definitions
+├── bandersnatch.js                        # Main object script with interactive metadata
+├── index.html                             # configured for nebulaflix.stream
+├── bandersnatch.js                        # Main object script with interactive metadata
 ├── Black.Mirror.Bandersnatch.2018.720p.WEB-DL.x264.DUAL.en.vtt  # English subtitles
 ```
 
