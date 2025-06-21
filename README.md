@@ -1,31 +1,48 @@
-# bandersnatch
+# 🎮 Bandersnatch Interactive Player
 
-![](https://i.imgur.com/vvdxUvy.jpg)
+This is an interactive web-based video player inspired by Netflix’s *Bandersnatch*, enabling branching video narratives where users choose what happens next.
 
-## Setup
+## 📂 Project Structure
 
-You have to download two json files -
-[bandersnatch.json](https://gist.github.com/jonluca/860f3f445e7d84054822276fd058301a)
-and
-[SegmentMap.json](https://github.com/jolbol1/Bandersnatch/blob/master/SegmentMap.json),
-add first lines 
-(`bandersnatch=` and `SegmentMap=` accordingly), save them as *.js (html can't access json content without a server) then open html file in the browser (everything should be in the same folder).
+```
+project-folder/
+├── index.html
+├── bandersnatch.js         # Main object script with interactive metadata
+├── SegmentMap.js           # Segment timing and structure definitions
+├── Black.Mirror.Bandersnatch.2018.720p.WEB-DL.x264.DUAL.mkv  # (You must legally own this)
+├── Black.Mirror.Bandersnatch.2018.720p.WEB-DL.x264.DUAL.en.vtt  # English subtitles
+```
 
-If you're experiencing problems with local setup I recommend hosted version (just open the page and drag video file there):
-* [Hosted version by mehotkhan (Bandersnatch Interactive Player)](https://mehotkhan.github.io/BandersnatchInteractive/)
+## ▶️ Features
 
-## Controls
+* Full video playback with synchronized choice prompts
+* Branching logic driven by segment and moment metadata
+* Support for user state tracking (`persistentState`)
+* Keyboard navigation:
 
-* <kbd>F</kbd> - Toggle fullscreen
-* <kbd>R</kbd> - Restart video
-* <kbd>→</kbd> - Jump to the next segment (or to the next interaction zone)
-* <kbd>←</kbd> - Jump to the previous segment
-* <kbd>Space</kbd> - Toggle play and pause
+  * `→` Jump forward
+  * `←` Jump back
+  * `F` Toggle fullscreen
+  * `Space` Play/Pause
+  * `R` Restart
 
-## References
+## 🌐 How to Use
 
-* [Reddit: GitHub - joric/bandersnatch: Black Mirror: Bandersnatch (interactive version)](https://redd.it/adnn2h)
-* [Reddit: How to go to ANY scene in the movie! (bandersnatch.json)](https://www.reddit.com/r/Bandersnatch/comments/aatkkp/how_to_go_to_any_scene_in_the_movie/)
-* [Reddit: Pearl Ritman's Advanced Evaluation (also: Netflix Interactive Video Moments revealed!)](https://www.reddit.com/r/Bandersnatch/comments/aaqt1y/pearl_ritmans_advanced_evaluation_also_netflix/)
-* [Reddit: Full Segment Map, Showing IDs, Choices, Start Times and Default Choices (SegmentMap.json)](https://www.reddit.com/r/Bandersnatch/comments/abnwmx/full_segment_map_showing_ids_choices_start_times/)
-* [Jon Engelsman: Through the Looking-Glass at Netflix (segmentGroups explained)](http://engelsjk.com/2018/12/30/Through-the-Looking-Glass-at-Netflix/)
+1. Place all files in the same folder.
+2. Ensure your video and `.vtt` file are correctly named and accessible.
+3. Open `index.html` in a browser that supports fullscreen and `video` autoplay.
+4. Start watching and make choices!
+
+> ⚠️ Note: Make sure the video is legally acquired. This project is for educational and demo purposes only.
+
+## 🚀 Optional Improvements
+
+* Host on a local server to avoid autoplay restrictions
+* Add more condition logic for deep state transitions
+* Customize UI with CSS for a Netflix-like theme
+
+## 💡 Credits
+
+* Inspired by *Netflix Bandersnatch*
+* Based on reverse-engineered data from [jonluca/segment-parser](https://gist.github.com/jonluca/860f3f445e7d84054822276fd058301a)
+* Segment map example from [jolbol1/Bandersnatch](https://github.com/jolbol1/Bandersnatch)
