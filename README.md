@@ -8,7 +8,7 @@ This is an interactive web-based video player inspired by Netflix’s *Bandersna
 
 ```
 project-folder/
-├── bandersnatch_full_nebulaflix_477.html  # Full player with 477 lines, configured for nebulaflix.stream
+├── index.html  # Full player with 477 lines, configured for nebulaflix.stream
 ├── bandersnatch.js                        # Main object script with interactive metadata
 ├── SegmentMap.js                          # Segment timing and structure definitions
 ├── Black.Mirror.Bandersnatch.2018.720p.WEB-DL.x264.DUAL.en.vtt  # English subtitles
@@ -31,7 +31,7 @@ project-folder/
 
 1. Place all files in the same folder.
 2. Ensure the `.vtt` subtitle file is correctly named and accessible.
-3. Open `bandersnatch_full_nebulaflix_477.html` in a browser that supports fullscreen and `video` autoplay.
+3. Open `index.html` in a browser that supports fullscreen and `video` autoplay.
 4. Start watching and make choices!
 
 > ⚠️ Note: This version streams from nebulaflix.stream. Make sure to test whether the video loads properly and that the site permits embedding. This project is for educational and memorial purposes only.
