@@ -2,14 +2,15 @@
 
 This is an interactive web-based video player inspired by Netflix’s *Bandersnatch*, enabling branching video narratives where users choose what happens next.
 
+> ❤️ This project is being maintained in memory of a child who loved the *Bandersnatch* experience and was heartbroken when Netflix removed the movie and the game disappeared. This player is a tribute to preserving that creativity and choice-driven storytelling for others to enjoy and learn from.
+
 ## 📂 Project Structure
 
 ```
 project-folder/
-├── index.html
-├── bandersnatch.js         # Main object script with interactive metadata
-├── SegmentMap.js           # Segment timing and structure definitions
-├── Black.Mirror.Bandersnatch.2018.720p.WEB-DL.x264.DUAL.mkv  # (You must legally own this)
+├── bandersnatch_full_nebulaflix_477.html  # Full player with 477 lines, configured for nebulaflix.stream
+├── bandersnatch.js                        # Main object script with interactive metadata
+├── SegmentMap.js                          # Segment timing and structure definitions
 ├── Black.Mirror.Bandersnatch.2018.720p.WEB-DL.x264.DUAL.en.vtt  # English subtitles
 ```
 
@@ -29,17 +30,19 @@ project-folder/
 ## 🌐 How to Use
 
 1. Place all files in the same folder.
-2. Ensure your video and `.vtt` file are correctly named and accessible.
-3. Open `index.html` in a browser that supports fullscreen and `video` autoplay.
+2. Ensure the `.vtt` subtitle file is correctly named and accessible.
+3. Open `bandersnatch_full_nebulaflix_477.html` in a browser that supports fullscreen and `video` autoplay.
 4. Start watching and make choices!
 
-> ⚠️ Note: Make sure the video is legally acquired. This project is for educational and demo purposes only.
+> ⚠️ Note: This version streams from nebulaflix.stream. Make sure to test whether the video loads properly and that the site permits embedding. This project is for educational and memorial purposes only.
 
 ## 🚀 Optional Improvements
 
-* Host on a local server to avoid autoplay restrictions
+* Host on a local server to avoid autoplay restrictions (e.g. with `python3 -m http.server`)
 * Add more condition logic for deep state transitions
 * Customize UI with CSS for a Netflix-like theme
+* Replace `eval()` usage with a safer parser for conditions
+* Build a test version with royalty-free videos and simple JSON maps
 
 ## 💡 Credits
 
