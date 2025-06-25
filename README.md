@@ -17,12 +17,14 @@ project-folder/
 ├── SegmentMap.js                          # Segment timing and structure definitions
 ├── index.html                             # Main player interface
 ├── Black.Mirror.Bandersnatch.2018.720p.WEB-DL.x264.DUAL.mkv  # Local video file
+```
+
 ```nteractive Player
 
 This is an interactive web-based video player inspired by Netflix’s *Bandersnatch*, enabling branching video narratives where users choose what happens next.
 
 > ❤️ This project is being maintained in memory of a child who loved the *Bandersnatch* experience and was heartbroken when Netflix removed the movie and the game disappeared. This player is a tribute to preserving that creativity and choice-driven storytelling for others to enjoy and learn from.
-
+```
 ## 📂 Project Structure
 
 ```
