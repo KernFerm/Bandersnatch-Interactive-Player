@@ -37,8 +37,6 @@ project-folder/
 ├── Black.Mirror.Bandersnatch.2018.720p.WEB-DL.x264.DUAL.en.vtt  # English subtitles
 ```
 
-- `nebulaflix.stream`
-
 ## ▶️ Features
 
 * Full video playback with synchronized choice prompts
