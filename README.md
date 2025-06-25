@@ -1,5 +1,24 @@
 # 🎮 Bandersnatch Interactive Player
 
+This is an interactive web-based video player inspired by Netflix's *Bandersnatch*, enabling branching video narratives where users choose what happens next.
+
+> ❤️ This project is being maintained in memory of a child who loved the *Bandersnatch* experience and was heartbroken when Netflix removed the movie and the game disappeared. This player is a tribute to preserving that creativity and choice-driven storytelling for others to enjoy and learn from.
+
+## 📂 Project Structure
+
+```
+project-folder/
+├── LICENSE
+├── README.md
+├── SECURITY.md
+├── bandersnatch.json
+├── SegmentMap.json
+├── bandersnatch.js                        # Main object script with interactive metadata
+├── SegmentMap.js                          # Segment timing and structure definitions
+├── index.html                             # Main player interface
+├── Black.Mirror.Bandersnatch.2018.720p.WEB-DL.x264.DUAL.mkv  # Local video file
+```nteractive Player
+
 This is an interactive web-based video player inspired by Netflix’s *Bandersnatch*, enabling branching video narratives where users choose what happens next.
 
 > ❤️ This project is being maintained in memory of a child who loved the *Bandersnatch* experience and was heartbroken when Netflix removed the movie and the game disappeared. This player is a tribute to preserving that creativity and choice-driven storytelling for others to enjoy and learn from.
@@ -33,12 +52,15 @@ project-folder/
 
 ## 🌐 How to Use
 
-1. Place all files in the same folder.
-2. Ensure the `.vtt` subtitle file is correctly named and accessible.
-3. Open `index.html` in a browser that supports fullscreen and `video` autoplay.
-4. Start watching and make choices!
+1. **Download the video file** from: `https://fv5-2.files.fm/down.php?i=wc9kkj5mdc&n=Black.Mirror.Bandersnatch.2018.720p.WEB-DL.x264.DUAL.mkv`
+2. **Place the downloaded video file** in the same folder as `index.html` with the exact filename: `Black.Mirror.Bandersnatch.2018.720p.WEB-DL.x264.DUAL.mkv`
+3. **Ensure all required files are present**:
+   - `bandersnatch.js` (contains interactive metadata)
+   - `SegmentMap.js` (contains segment timing definitions)
+4. **Open `index.html`** in a browser that supports fullscreen and `video` autoplay
+5. **Start watching and make choices!**
 
-> ⚠️ Note: This version streams from nebulaflix.stream. Make sure to test whether the video loads properly and that the site permits embedding. This project is for educational and memorial purposes only.
+> ⚠️ Note: This version uses a local video file. Host on a local server (e.g., with `python3 -m http.server`) to avoid browser restrictions. This project is for educational and memorial purposes only.
 
 ## 🚀 Optional Improvements
 
